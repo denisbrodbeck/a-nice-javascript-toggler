@@ -1,0 +1,27 @@
+{
+  "name": "a-nice-javascript-toggler",
+  "version": "1.0.0",
+  "description": "a-nice-javascript-toggler",
+  "scripts": {
+    "build": "npm run build:background && npm run build:options",
+    "build:background": "tsc --target ES2017 --strict --outFile app/background.js src/index.ts",
+    "build:options": "tsc --target ES2017 --strict --outFile app/options.js src/options.ts",
+    "start": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisbrodbeck/a-nice-javascript-toggler.git"
+  },
+  "keywords": ["firefox", "extension", "web extension", "privacy", "blocker"],
+  "author": "Denis Brodbeck",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/denisbrodbeck/a-nice-javascript-toggler/issues"
+  },
+  "homepage": "https://github.com/denisbrodbeck/a-nice-javascript-toggler#readme",
+  "devDependencies": {
+    "typescript": "^3.1.3"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "A Fine JavaScript Toggler",
+  "applications": {
+    "gecko": {
+      "id": "go.a-fine-javascript-toggler@darker.red"
+    }
+  },
+  "version": "1.0.0",
+  "author": "Denis Brodbeck",
+  "description": "Block or allow JavaScript on individual websites with a click of a button.",
+  "homepage_url": "https://github.com/denisbrodbeck/fine-javascript-toggler",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icons/logo_16.png",
+    "32": "icons/logo_32.png",
+    "48": "icons/logo_48.png",
+    "64": "icons/logo_64.png",
+    "96": "icons/logo_96.png",
+    "128": "icons/logo_128.png",
+    "256": "icons/logo_256.png",
+    "512": "icons/logo_512.png"
+  },
+  "page_action": {
+    "browser_style": false,
+    "default_icon": "icons/logo_js_allowed.svg",
+    "default_title": "Disable JavaScript"
+  },
+  "options_ui": {
+    "browser_style": true,
+    "page": "app/options.html"
+  },
+  "background": {
+    "scripts": ["app/background.js"]
+  }
+}
