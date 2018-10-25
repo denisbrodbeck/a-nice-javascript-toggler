@@ -7,8 +7,8 @@ This is a WebExtension for Firefox which allows you to enable or disable JavaScr
 ## Main Features
 
 * Supports Firefox v60 and higher
-* Adds small icon to page action are allowing to disable JavaScript on the current page
-* By default all JavaScript is allowed (configurable)
+* Block or allow JavaScript on individual websites with the click of a button.
+* By default JavaScript is allowed on all websites (configurable)
 * Has Options dialog to configure default behavior
 
 ## Notes for developers
